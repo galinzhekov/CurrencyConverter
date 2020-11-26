@@ -202,7 +202,7 @@ public class GraphActivity extends AppCompatActivity {
         public String getFormattedValue(float value) {
             DecimalFormat decimalFormat = new DecimalFormat("#.##");
             float twoDigitsRandom = Float.parseFloat(decimalFormat.format(value));
-            return twoDigitsRandom + "$";
+            return String.valueOf(twoDigitsRandom);
         }
     }
 
@@ -222,7 +222,7 @@ public class GraphActivity extends AppCompatActivity {
         mLineChart.setBorderColor(Color.BLUE);
 
         Description description = new Description();
-        description.setText("Currencies");
+        description.setText("Currency: " + mCurrency.getCode());
         description.setTextColor(Color.BLUE);
         description.setTextSize(20);
         mLineChart.setDescription(description);
