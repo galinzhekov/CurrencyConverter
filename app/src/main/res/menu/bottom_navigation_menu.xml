@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_rate"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:title="Rate"/>
+    <item
+        android:id="@+id/page_chart"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_show_chart_24"
+        android:title="Chart" />
+</menu>
