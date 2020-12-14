@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AutoCompleteTextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -92,6 +93,7 @@ public class GraphActivity extends AppCompatActivity {
             assert imm != null;
             assert v != null;
             imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+            Toast.makeText(this, "Swipe right to remove the added element", Toast.LENGTH_SHORT).show();
         });
         textView.setAdapter(mAdapter);
 

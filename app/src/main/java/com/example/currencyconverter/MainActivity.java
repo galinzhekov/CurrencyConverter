@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements OnItemListener {
     }
 
     public void parseJSON(String countryCode) {
-        String url = "";
+        String url;
         if (TextUtils.isEmpty(countryCode)) {
             url = "https://floatrates.com/daily/usd.json";
         } else {
